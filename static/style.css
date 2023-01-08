@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+}
+
+.logo-container {
+    background-color: black;
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 400px;
+    display: inline-block;
+    color: white;
+}
+
+#b1 {
+    animation: blinkIn, fadeIn;
+    animation-duration: 2s, 3s;
+    animation-delay: 0s, 2s;
+}
+
+#a {
+    opacity: 0;
+    animation: fadeIn 6s;
+    animation-delay: 3s;
+}
+
+#s {
+    opacity: 0;
+    animation: fadeIn 6s;
+    animation-delay: 3s;
+}
+
+#b2 {
+    animation: blinkIn, fadeIn;
+    animation-duration: 2s, 3s;
+    animation-delay: 0s, 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.2;
+    } 50% {
+        opacity: 1;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blinkIn {
+    0% {
+        opacity: 0;
+    } 
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
